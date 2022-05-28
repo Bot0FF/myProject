@@ -15,7 +15,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = "/put") //id передается в адресной строке, информация о Pet в body
+@WebServlet(urlPatterns = "/put") 
 public class ServletPut extends HttpServlet {
     Model model = Model.getInstance();
     Gson gson = new GsonBuilder().setPrettyPrinting().create();
